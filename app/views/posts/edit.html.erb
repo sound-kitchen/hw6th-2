@@ -1,0 +1,7 @@
+<h1>수정</h1>
+
+<%= render 'form', post: @post %>
+<div class="editbox">
+  <%= link_to '자세히', @post, class: 'double' %>
+  <%= link_to '뒤로', posts_path, class: 'double' %>
+</div>

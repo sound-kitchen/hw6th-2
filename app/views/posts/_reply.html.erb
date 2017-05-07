@@ -1,0 +1,42 @@
+<% @post.replies.each do |reply| %>
+  <div class="contentbox">
+    <div class="form-group">
+    <h2>모든 댓글</h2>
+    </div>
+    <div class="form-group">
+      <p>
+        <strong>작성자:</strong>
+        <%= reply.reply_user %>
+      </p>
+    </div>
+    <div class="form-group">
+      <p>
+        <strong>댓글:</strong>
+        <%= reply.body %>
+      </p>
+    </div>
+  </div>
+<% end %>
+
+<%= form_for([@post, @post.replies.build]) do |f| %>
+  <div class="contentbox">
+    <h2>댓글 작성:</h2>
+    <div class="replyform">
+      <div class="form-group">
+        <p><%= f.label :작성자 %><span>*</span></p>
+        <span class="icon-case"><i class="fa fa-diamond"></i></span>
+          <%= f.text_field :reply_user %>
+      </div>
+
+      <div class="form-group">
+        <p><%= f.label :내용 %><span>*</span></p>
+        <span class="icon-case"><i class="fa fa-comments-o"></i></span>
+          <%= f.text_area :body %>
+      </div>
+
+      <div class="form-group">
+        <%= f.submit "저장", class: 'submit' %>
+      </div>
+    </div>
+  </div>
+<% end %>

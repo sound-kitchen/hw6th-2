@@ -1,0 +1,230 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+   box-sizing: border-box;
+ }
+
+ .container {
+   width: 700px;
+   margin: 0 auto;
+ }
+
+ a:visited, a:link {
+   text-decoration: none;
+   color: white;
+ }
+
+ body {
+    margin: auto;
+    background: #eaeaea;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+ ul {
+   list-style-type: none;
+   padding-left: 0px;
+ }
+
+ ul > li {
+   float: left;
+   margin-left: 25px;
+ }
+
+ form h1 {
+    font-size: 18px;
+    background: #F6AA93 none repeat scroll 0% 0%;
+    color: rgb(255, 255, 255);
+    padding: 22px 25px;
+    border-radius: 5px 5px 0px 0px;
+    margin: auto;
+    text-shadow: none;
+    text-align:left
+  }
+
+ form {
+    border-radius: 5px;
+    max-width:700px;
+    width: 100%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+  }
+
+ p span {
+    color: #F00;
+ }
+
+ p {
+    margin: 0px;
+    font-weight: 500;
+    line-height: 2;
+    color:#333;
+ }
+
+  h1 {
+    text-align:center;
+    color: #666;
+    text-shadow: 1px 1px 0px #FFF;
+    margin:50px 0px 0px 0px
+ }
+
+ input {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #eee;
+    margin-bottom: 15px;
+    width: 75%;
+    height: 40px;
+    float: left;
+    padding: 0px 15px;
+    font-size: 20px;
+  }
+
+
+  textarea {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #EEE;
+    margin: 0;
+    width: 75%;
+    height: 130px;
+    float: left;
+    padding: 0px 15px;
+    font-size: 18px;
+  }
+
+  .form-group {
+    overflow: hidden;
+    clear: both;
+    font-size: 20px;
+  }
+
+  .icon-case {
+    width: 35px;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    background:#eeeeee;
+    height:42px;
+    position: relative;
+    text-align: center;
+    line-height:40px;
+  }
+
+  i {
+    color:#555;
+  }
+
+  .contentform {
+    padding: 40px 30px;
+  }
+
+  .contentbox {
+    border-radius: 5px;
+    max-width:700px;
+    width: 100%;
+    margin: 2% auto;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    padding: 20px 20px;
+  }
+
+ .contentbox tr {
+   text-align: left;
+ }
+
+ .replyform {
+   padding: 20px 30px;
+ }
+
+ .button {
+    color: #FFF;
+    text-align: center;
+    width: 12%;
+    border:0;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 40px;
+    line-height: 40px;
+    font-size: 18px;
+ }
+
+ .button.dark {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   margin-bottom: 10px;
+ }
+
+ .double {
+   background-color: #476b5c;
+   width: 15%;
+   color: #FFF;
+   text-align: center;
+   border:0;
+   border-radius: 8px;
+   cursor: pointer;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   line-height: 40px;
+   font-size: 18px;
+ }
+
+ .editbox {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+
+ .light {
+   background-color: #81BDA4;
+ }
+
+ .light:hover {
+   background-color: #476b5c;
+   font-weight: 800;
+ }
+
+ .dark {
+   background-color: #476b5c;
+ }
+
+ .submit {
+   background-color: #81BDA4;
+   color: #FFF;
+   text-align: center;
+   line-height: 40px;
+   width: 30%;
+   border:0;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 40px;
+   font-size: 22px;
+   position: relative;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+
+ .submit:hover {
+   background-color: #476b5c;
+ }
+
+ th {
+   font-size: 20px;
+   width: 30%;
+ }
+
+ h2 {
+   height: auto;
+ }

@@ -1,0 +1,24 @@
+<h1>글 목록</h1>
+
+<table class="contentbox">
+  <tr>
+    <th>제목</th>
+    <th>내용</th>
+  </tr>
+
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.body %></td>
+      <td class="button light"><%= link_to '자세히', post_path(post) %></td>
+      <td class="button light"><%= link_to '수정', edit_post_path(post) %></td>
+      <td class="button light"><%= link_to '파괴', post_path(post),
+              method: :delete,
+              data: { confirm: '레알?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<div class="button dark">
+  <%= link_to '새로 작성', new_post_path %>
+</div>
